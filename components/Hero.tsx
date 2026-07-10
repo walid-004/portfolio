@@ -16,24 +16,24 @@ export default function Hero() {
 
 <div className="absolute bottom-[-200px] right-[-200px] h-[500px] w-[500px] rounded-full bg-cyan-500/10 blur-[150px]"></div>
 
-      <div className="mx-auto flex min-h-screen max-w-7xl flex-col-reverse items-center justify-center gap-12 px-6 lg:flex-row lg:justify-between">
+      <div className="mx-auto flex min-h-screen max-w-7xl flex-col-reverse items-center justify-center gap-12 px-5 py-10 sm:px-6 lg:flex-row lg:justify-between lg:px-8">
 
         {/* Left Side */}
-        <div className="w-full text-center lg:w-1/2 lg:text-left">
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
         
   {/* <p className="mb-4 text-lg text-blue-500"> */}
   <p className="mb-4 animate-pulse text-lg text-blue-500">
     👋 Hi, I'm
   </p>
 
-  <h1 className="text-6xl font-extrabold leading-tight lg:text-7xl">
+  <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-7xl">
   Walid <br />
   <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
     Azim Pansari
   </span>
 </h1>
 
-  <h2 className="mt-6 text-2xl font-semibold text-gray-300">
+  <h2 className="mt-6 text-lg font-semibold text-gray-300 sm:text-xl lg:text-2xl">
     IT Support Engineer | WordPress Developer | Network Administrator
   </h2>
 
@@ -42,7 +42,7 @@ export default function Hero() {
     troubleshoot hardware and networking issues, and create
     reliable digital solutions for businesses.
   </p>
-    <div className="mt-10 flex flex-wrap gap-5">
+    <div className="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start">
   <a
   href="/resume.pdf"
   download
@@ -132,14 +132,15 @@ export default function Hero() {
 
         {/* Circle */}
 
-        <div className="relative flex h-[520px] w-[520px] items-end justify-center overflow-hidden rounded-full border-4 border-blue-500/40">
+        <div className="relative flex h-[320px] w-[320px] items-end justify-center overflow-hidden rounded-full border-4 border-blue-500/40 sm:h-[420px] sm:w-[420px] lg:h-[520px] lg:w-[520px]">
         
             <Image
               src="/images/Profile.png"
               alt="Walid Pansari"
               width={450}
               height={650}
-              className="absolute bottom-[-60] left-1/2 w-[420px] -translate-x-1/2 object-contain"
+              className="absolute top-8 left-1/2 z-10 w-[250px] -translate-x-1/2 object-contain transition-all duration-500 hover:scale-105 sm:w-[330px] lg:top-10 lg:w-[420px]"
+              // className="absolute bottom-[-60] left-1/2 w-[420px] -translate-x-1/2 object-contain"
               // className="absolute top-4 left-1/2 w-[360px] -translate-x-1/2 object-contain transition-all duration-500 hover:scale-105"
               priority
               loading="eager"
