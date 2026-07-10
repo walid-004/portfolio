@@ -78,25 +78,25 @@ export default function Skills() {
           Skills
         </p>
 
-        <h2 className="mt-3 text-5xl font-bold">
+        <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
           My <span className="text-blue-500">Skills</span>
         </h2>
 
         {/* Skills Grid */}
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 
           {skills.map((skill) => (
 
             <div
               key={skill.name}
-              className="rounded-2xl border border-gray-800 bg-[#0B1220] p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/20"
+              className="rounded-2xl border border-gray-800 bg-[#0B1220] p-6 text-center transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/20"
             >
 
               <div className="mb-5 flex justify-center">
                 {skill.icon}
               </div>
 
-              <h3 className="text-lg font-semibold">
+              <h3 className="text-base font-semibold sm:text-lg">
                 {skill.name}
               </h3>
 
