@@ -15,17 +15,17 @@ export default function About() {
           About Me
         </p>
 
-        <h2 className="mt-3 text-5xl font-bold">
+        <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
           Know More About{" "}
           <span className="text-blue-500">Me</span>
         </h2>
 
-        <div className="mt-16 grid items-center gap-16 lg:grid-cols-2">
+        <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
 
           {/* Left Side */}
           <div>
 
-            <p className="text-lg leading-9 text-gray-400">
+            <p className="text-base leading-8 text-gray-400 sm:text-lg">
               I'm Walid Azim Pansari, an IT Support Engineer,
               WordPress Developer and Network Administrator
               passionate about creating responsive websites,
@@ -39,7 +39,7 @@ export default function About() {
               Networking and IT Infrastructure.
             </p>
 
-            <div className="mt-10 grid grid-cols-2 gap-6">
+            <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
 
   <div>
     <h4 className="text-sm text-gray-500">Name</h4>
@@ -70,7 +70,7 @@ export default function About() {
 
           {/* Right Side */}
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
 
             <div className="rounded-xl border border-gray-800 bg-[#0B1220] p-6 text-center transition-all duration-300 hover:-translate-y-2 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20">
               <h3 className="text-3xl font-bold text-blue-500">
