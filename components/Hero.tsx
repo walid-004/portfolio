@@ -29,7 +29,7 @@ export default function Hero() {
   <h1 className="text-6xl font-extrabold leading-tight lg:text-7xl">
   Walid <br />
   <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
-     Pansari
+    Azim Pansari
   </span>
 </h1>
 
