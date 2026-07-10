@@ -1,15 +1,16 @@
 // import Image from "next/image";
+import { HiMenuAlt3 } from "react-icons/hi";
 export default function Navbar() {
   return (
-    <nav className="w-full border-b border-gray-800 bg-black text-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <nav className="sticky top-0 z-50 w-full border-b border-gray-800/70 bg-black/80 text-white backdrop-blur-md">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
 
         {/* Logo */}
         <div className="flex items-center gap-3">
           <img
           src="/Logo.svg"
           alt="Logo"
-          className="h-10 w-auto"
+          className="h-8 w-auto sm:h-10"
         />
 
 </div>
@@ -38,10 +39,12 @@ export default function Navbar() {
         </ul>
 
         {/* Button */}
-        <button className="rounded-lg bg-blue-600 px-5 py-2 font-medium transition hover:bg-blue-700">
+        <button className="hidden rounded-lg bg-blue-600 px-5 py-2 font-medium transition hover:bg-blue-700 md:block">
           Hire Me
         </button>
-
+        <button className="text-3xl md:hidden">
+  <HiMenuAlt3 />
+</button>
       </div>
     </nav>
   );
